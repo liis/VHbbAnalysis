@@ -1,0 +1,8 @@
+/hdfs/cms/store/user/liis/VHbb_patTuples/TTW/PAT.edm_1_3_t5E.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/TTW/PAT.edm_2_3_y2b.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/TTW/PAT.edm_3_3_sJY.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/TTW/PAT.edm_4_1_y7v.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/TTW/PAT.edm_5_1_xLz.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/TTW/PAT.edm_6_0_fkZ.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/TTW/PAT.edm_7_0_7QX.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/TTW/PAT.edm_8_0_g8f.root
