@@ -2,6 +2,7 @@
 *~
 *#
 *.out
+*.root
 *.pdf
 *.png
 *__init__.py
