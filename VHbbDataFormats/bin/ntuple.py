@@ -138,8 +138,18 @@ process.Analyzer = cms.PSet(
         "HLT_LooseIsoPFTau35_Trk20_Prong1_v.*", #51
         "HLT_LooseIsoPFTau35_Trk20_Prong1_MET70_v.*", #52
         "HLT_LooseIsoPFTau35_Trk20_Prong1_MET75_v.*", #53
-       
-   ),
+        #----------- all-hadronic triggers --------------------
+        "HLT_QuadJet50_v.*", #54
+        "HLT_QuadJet60_DiJet20_v.*", #55
+        "HLT_DiJet80_DiJet60_DiJet20_v.*", #56
+        "HLT_DiPFJet80_DiPFJet30_BTagCSVd07d05_v.*", #57
+        "HLT_SixJet45_v.*", #58
+        "HLT_PFNoPUHT650_v1", #59
+        "HLT_EightJet30_eta3p0_v.*", #60
+        "HLT_QuadPFJet82_65_48_35_BTagCSV_VBF_v.*", #61
+        # "HLT_PFHT650_v.*", #62
+        ),
+    
     isMC =     cms.bool(True),
     verbose = cms.bool(False),
     readFromCandidates = cms.bool(False),

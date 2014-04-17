@@ -18,7 +18,7 @@ print "Import cfg file from ntuple.py"
 from ntuple  import process 
 
 debug    = False
-outdir = './Ntuples_allHad'
+outdir = './Ntuples_allHadTrig'
 print "Saving output to " + outdir
 
 def processAllBatch(jobName, isPisa, outName, split): #isPisa is a placeholder
@@ -156,7 +156,6 @@ mc_samples = {
     "TTJets_FullLeptMGDecays_8TeV-madgraph": 782,
     "TTJets_HadronicMGDecays_8TeV-madgraph": 922,    
 
-    # FIXME ADD OTHERS
     }
 
 for mc_sample in mc_samples:

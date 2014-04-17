@@ -6,4 +6,7 @@
 *.pdf
 *.png
 *__init__.py
+*slurm*
+myStep2_*.py
+myStep2_*.sh
 Ntuples_*/*
