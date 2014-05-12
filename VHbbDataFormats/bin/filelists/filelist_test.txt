@@ -1,1 +1,2 @@
+/hdfs/cms/store/user/liis/VHbb_patTuples/test/PAT.edm_1_2_vHH.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/test/PAT.edm_35_1_omh.root

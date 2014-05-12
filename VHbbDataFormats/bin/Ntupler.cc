@@ -1032,7 +1032,7 @@ int main(int argc, char* argv[])
 //   pdfNames.push_back("MSTW2008lo68cl.LHgrid"); // MSTW2008 (LO central)
 //   pdfNames.push_back("MSTW2008nnlo68cl.LHgrid"); // MSTW2008 (NNLO central)
 
-  doAllHad_=0; //FIXME put to cfg file
+//  bool doAllHad_=true; //FIXME put to cfg file
   //initializing all the pdf sets
   nPdf=1; // one count the nominal PDF
   for (unsigned int setpdf=2; setpdf <= pdfNames.size()+1; setpdf++){
@@ -1109,6 +1109,9 @@ int main(int argc, char* argv[])
   std::string PUdatafileName2011B_ = in.getParameter<std::string> ("PUdatafileName2011B") ;
   std::string Weight3DfileName_ = in.getParameter<std::string> ("Weight3DfileName") ;
   
+  bool doAllHad_ = in.getParameter<bool>("doAllHad"); 
+  bool run_ttH_EE_ = in.getParameter<bool>("run_ttH_EE");
+
   JECFWLite jec(ana.getParameter<std::string>("jecFolder"));
 
   bool isMC_( ana.getParameter<bool>("isMC") );  
@@ -2171,7 +2174,12 @@ double MyWeight = LumiWeights_.weight( Tnpv );
 	const std::vector<reco::Vertex> svc = *(SVC.product());
         
 	const VHbbCandidate & vhCand =  cand->at(0);
-	patFilters.setEvent(&ev,"VH");
+
+	if( !run_ttH_EE_ )
+	  patFilters.setEvent(&ev,"VH"); //default
+	else
+	  patFilters.setEvent(&ev,"TTH"); //test running on EE
+	
 	hbhe = patFilters.accept("hbhe");
 	ecalFlag = patFilters.accept("ecalFilter");
 	totalKinematics = patFilters.accept("totalKinematics");

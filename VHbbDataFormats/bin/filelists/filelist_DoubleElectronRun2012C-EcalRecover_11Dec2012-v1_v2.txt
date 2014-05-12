@@ -1,5 +1,6 @@
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_10_1_P92.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_11_1_thG.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_1_1_NJF.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_12_1_mxD.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_13_1_63F.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_14_1_Kvq.root
@@ -8,9 +9,9 @@
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_17_1_8sD.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_18_1_SUS.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_19_1_lOI.root
-/hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_1_1_NJF.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_20_1_yQZ.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_21_1_vMH.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_2_2_0IA.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_22_1_KYb.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_23_1_GA8.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_24_1_tVs.root
@@ -19,9 +20,9 @@
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_27_1_FMR.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_28_1_xOw.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_29_1_Brp.root
-/hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_2_2_0IA.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_30_1_8u3.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_31_1_Fwj.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_3_1_zEp.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_32_1_N54.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_33_1_jQX.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_34_1_Bu8.root
@@ -30,7 +31,6 @@
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_37_1_SiN.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_38_1_8ag.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_39_1_NAQ.root
-/hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_3_1_zEp.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_40_1_cCA.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_4_1_RU4.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2/PAT.edm_5_1_m7s.root

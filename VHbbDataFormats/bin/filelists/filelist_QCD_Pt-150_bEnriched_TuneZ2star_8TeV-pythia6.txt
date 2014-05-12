@@ -1,0 +1,17 @@
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_10_6_LGs.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_11_3_ZlP.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_12_3_R4g.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_13_6_E77.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_14_6_Asl.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_15_3_3DY.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_16_6_UGA.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_1_6_gQ8.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_17_2_TyV.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_2_6_DtA.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_3_6_cUh.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_4_6_U9x.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_5_6_Rjx.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_6_6_DEj.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_7_3_YcO.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_8_6_uqY.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_9_3_EW0.root

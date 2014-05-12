@@ -82,7 +82,7 @@ def processAllBatch(jobName, isPisa, outName, split): #isPisa is a placeholder
 ###########################################################################
 
 
-files_per_job = 30
+files_per_job = 10
 #infile_path = "/hdfs/cms/store/user/liis/VHbb_patTuples/"
 
 print "Processing data-samples..."
@@ -133,7 +133,7 @@ mc_samples = {
 #    "TTH_HToBB_M-110_8TeV-pythia6": 35,
 #    "TTH_HToBB_M-115_8TeV-pythia6": 17,
 #    "TTH_HToBB_M-120_8TeV-pythia6": 25,
-    "TTH_HToBB_M-125_8TeV-pythia6": 16,
+#    "TTH_HToBB_M-125_8TeV-pythia6": 16,
 #    "TTH_HToBB_M-130_8TeV-pythia6": 22,
 #    "TTH_HToBB_M-135_8TeV-pythia6": 18,
 #    "TTWJets_8TeV-madgraph": 8,
@@ -152,9 +152,13 @@ mc_samples = {
 #    "Tbar_t-channel_TuneZ2star_8TeV-powheg-tauola": 20,
 #    "Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola": 27,
 
-    "TTJets_SemiLeptMGDecays_8TeV-madgraph": 1697,
-    "TTJets_FullLeptMGDecays_8TeV-madgraph": 782,
-    "TTJets_HadronicMGDecays_8TeV-madgraph": 922,    
+#    "TTJets_SemiLeptMGDecays_8TeV-madgraph": 1697,
+#    "TTJets_FullLeptMGDecays_8TeV-madgraph": 782,
+#    "TTJets_HadronicMGDecays_8TeV-madgraph": 922,    
+
+    "QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6": 17,
+#    "QCD_Pt-30To50_bEnriched_TuneZ2star_8TeV-pythia6",
+#    "QCD_Pt-50To150_bEnriched_TuneZ2star_8TeV-pythia6",
 
     }
 
