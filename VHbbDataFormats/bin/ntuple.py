@@ -144,10 +144,11 @@ process.Analyzer = cms.PSet(
         "HLT_DiJet80_DiJet60_DiJet20_v.*", #56
         "HLT_DiPFJet80_DiPFJet30_BTagCSVd07d05_v.*", #57
         "HLT_SixJet45_v.*", #58
-        "HLT_PFNoPUHT650_v1", #59
+        "HLT_PFNoPUHT650_v.*", #59 #missing
         "HLT_EightJet30_eta3p0_v.*", #60
         "HLT_QuadPFJet82_65_48_35_BTagCSV_VBF_v.*", #61
-        # "HLT_PFHT650_v.*", #62
+        "HLT_PFHT650_v.*", #62        
+ 
         ),
     
     isMC =     cms.bool(True),

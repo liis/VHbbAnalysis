@@ -23,11 +23,22 @@ OVERWRITE_FILES_AT_STORAGE=0 # set different from 0, if you want to overwrite ex
 INDIR=$1 # directory with unmerged root files
 OUTDIR_LOCAL=$INDIR/Ntuples_merged
 
-OUTDIR_STORAGE="/hdfs/cms/store/user/liis/TTH_Ntuples_allHad/"
+OUTDIR_STORAGE="/hdfs/cms/store/user/liis/TTH_Ntuples_allHadTrig/"
 SRMPATH="srm://ganymede.hep.kbfi.ee:8888/srm/v2/server?SFN="
 
 BASE_STR="DiJetPt_"
-DATASETS=("DYJetsToLL_M-10To50_TuneZ2Star_8TeV-madgraph" "TTH_HToBB_M-110_8TeV-pythia6" "TTH_HToBB_M-115_8TeV-pythia6" "TTH_HToBB_M-120_8TeV-pythia6" "TTH_HToBB_M-125_8TeV-pythia6" "TTH_HToBB_M-130_8TeV-pythia6" "TTH_HToBB_M-135_8TeV-pythia6" "TTWJets_8TeV-madgraph" "TTZJets_8TeV-madgraph" "WZ_TuneZ2star_8TeV_pythia6_tauola" "ZZ_TuneZ2star_8TeV_pythia6_tauola" "WW_TuneZ2star_8TeV_pythia6_tauola" "WJetsToLNu_TuneZ2Star_8TeV-madgraph-tarball" "Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola" "Tbar_s-channel_TuneZ2star_8TeV-powheg-tauola" "Tbar_t-channel_TuneZ2star_8TeV-powheg-tauola" "T_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola" "T_s-channel_TuneZ2star_8TeV-powheg-tauola" "T_t-channel_TuneZ2star_8TeV-powheg-tauola" "TTJets_FullLeptMGDecays_8TeV-madgraph" "TTJets_HadronicMGDecays_8TeV-madgraph" "TTJets_MassiveBinDECAY_8TeV-madgraph" "TTJets_SemiLeptMGDecays_8TeV-madgraph" "DYJetsToLL_M-50_TuneZ2Star_8TeV-madgraph" "SingleMuRun2012AAug06" "SingleMuRun2012AJul13" "SingleMuRun2012BJul13" "SingleMuRun2012CAug24Rereco" "SingleMuRun2012C-EcalRecover_11Dec2012-v1_v2" "SingleMuRun2012CPromptv2" "SingleMuRun2012CPromptV2TopUp" "SingleMuRun2012D-PromptReco-v1" "SingleElectronRun2012AAug06EdmV42" "SingleElectronRun2012AJul13EdmV42b" "SingleElectronRun2012BJul13EdmV42" "SingleElectronRun2012CAug24RerecoEdmV42"  "SingleElectronRun2012C-EcalRecover_11Dec2012-v1_v2" "SingleElectronRun2012CPromptv2EdmV42" "SingleElectronRun2012CPromptV2TopUpEdmV42" "SingleElectronRun2012D-PromptReco-v1_v3" "DoubleElectron_Run2012A-recover-06Aug2012-v1_ProcV2" "DoubleElectron_Run2012A-13Jul2012-v1_ProcFIXED" "DoubleElectron_Run2012A-13Jul2012-v1_ProcV2" "DoubleElectron_Run2012B-13Jul2012-v1_ProcFIXED" "DoubleElectron_Run2012B-13Jul2012-v1_ProcV2" "DoubleElectronRun2012CAug24RerecoEdmV42" "DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2" "DoubleElectron_Run2012C-PromptReco-v2_HBB_EDMNtupleV42_ProcV1" "DoubleElectron_Run2012C-PromptReco-v2_HBB_EDMNtupleV42_ProcV2" "DoubleElectronRun2012D")   
+DATASETS=("DYJetsToLL_M-10To50_TuneZ2Star_8TeV-madgraph" "TTH_HToBB_M-110_8TeV-pythia6" "TTH_HToBB_M-115_8TeV-pythia6" "TTH_HToBB_M-120_8TeV-pythia6" 
+#"TTH_HToBB_M-125_8TeV-pythia6" 
+"TTH_HToBB_M-130_8TeV-pythia6" "TTH_HToBB_M-135_8TeV-pythia6" "TTWJets_8TeV-madgraph" "TTZJets_8TeV-madgraph" "WZ_TuneZ2star_8TeV_pythia6_tauola" "ZZ_TuneZ2star_8TeV_pythia6_tauola" "WW_TuneZ2star_8TeV_pythia6_tauola" 
+"WJetsToLNu_TuneZ2Star_8TeV-madgraph-tarball" 
+"Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola" 
+"Tbar_s-channel_TuneZ2star_8TeV-powheg-tauola" 
+"Tbar_t-channel_TuneZ2star_8TeV-powheg-tauola" 
+"T_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola" 
+"T_s-channel_TuneZ2star_8TeV-powheg-tauola" 
+"T_t-channel_TuneZ2star_8TeV-powheg-tauola" 
+#"TTJets_FullLeptMGDecays_8TeV-madgraph" 
+"TTJets_HadronicMGDecays_8TeV-madgraph" "TTJets_MassiveBinDECAY_8TeV-madgraph" "TTJets_SemiLeptMGDecays_8TeV-madgraph" "DYJetsToLL_M-50_TuneZ2Star_8TeV-madgraph" "SingleMuRun2012AAug06" "SingleMuRun2012AJul13" "SingleMuRun2012BJul13" "SingleMuRun2012CAug24Rereco" "SingleMuRun2012C-EcalRecover_11Dec2012-v1_v2" "SingleMuRun2012CPromptv2" "SingleMuRun2012CPromptV2TopUp" "SingleMuRun2012D-PromptReco-v1" "SingleElectronRun2012AAug06EdmV42" "SingleElectronRun2012AJul13EdmV42b" "SingleElectronRun2012BJul13EdmV42" "SingleElectronRun2012CAug24RerecoEdmV42"  "SingleElectronRun2012C-EcalRecover_11Dec2012-v1_v2" "SingleElectronRun2012CPromptv2EdmV42" "SingleElectronRun2012CPromptV2TopUpEdmV42" "SingleElectronRun2012D-PromptReco-v1_v3" "DoubleElectron_Run2012A-recover-06Aug2012-v1_ProcV2" "DoubleElectron_Run2012A-13Jul2012-v1_ProcFIXED" "DoubleElectron_Run2012A-13Jul2012-v1_ProcV2" "DoubleElectron_Run2012B-13Jul2012-v1_ProcFIXED" "DoubleElectron_Run2012B-13Jul2012-v1_ProcV2" "DoubleElectronRun2012CAug24RerecoEdmV42" "DoubleElectronRun2012C-EcalRecover_11Dec2012-v1_v2" "DoubleElectron_Run2012C-PromptReco-v2_HBB_EDMNtupleV42_ProcV1" "DoubleElectron_Run2012C-PromptReco-v2_HBB_EDMNtupleV42_ProcV2" "DoubleElectronRun2012D")   
 
 for DATASET in ${DATASETS[@]}
   do
