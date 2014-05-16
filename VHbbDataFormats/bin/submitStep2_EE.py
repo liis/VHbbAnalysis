@@ -18,7 +18,9 @@ print "Import cfg file from ntuple.py"
 from ntuple  import process 
 
 debug    = False
-outdir = './Ntuples_allHadTrig'
+#outdir = './Ntuples_allHadTrig'
+
+outdir = './Ntuples_lep'
 print "Saving output to " + outdir
 
 def processAllBatch(jobName, isPisa, outName, split): #isPisa is a placeholder
@@ -52,6 +54,7 @@ def processAllBatch(jobName, isPisa, outName, split): #isPisa is a placeholder
     
     f = open(scriptName,'w')
     f.write('#!/bin/bash\n\n')
+    f.write('/bin/hostname \n\n')
     f.write('cd /home/liis/TTH_Ntuples/CMSSW_5_3_3/src/VHbbAnalysis/VHbbDataFormats/bin/\n')#/shome/liis/CMSSW_5_3_3_patch2_New/src/VHbbAnalysis/VHbbDataFormats/bin\n')
     f.write('export SCRAM_ARCH="slc5_amd64_gcc462"\n')
     f.write('source $VO_CMS_SW_DIR/cmsset_default.sh\n')
@@ -157,8 +160,8 @@ mc_samples = {
 #    "TTJets_HadronicMGDecays_8TeV-madgraph": 922,    
 
     "QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6": 17,
-#    "QCD_Pt-30To50_bEnriched_TuneZ2star_8TeV-pythia6",
-#    "QCD_Pt-50To150_bEnriched_TuneZ2star_8TeV-pythia6",
+    "QCD_Pt-30To50_bEnriched_TuneZ2star_8TeV-pythia6": 173,
+    "QCD_Pt-50To150_bEnriched_TuneZ2star_8TeV-pythia6": 107,
 
     }
 
