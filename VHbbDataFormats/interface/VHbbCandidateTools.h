@@ -243,7 +243,7 @@ class VHbbCandidateTools {
       std::cout <<" debug met "<< temp.V.mets[0].metSig << " " <<  temp.V.mets[0].sumEt<< std::endl;
     }   
 //    if (temp.V.mets[0].metSig<5) return in;
-    if (temp.V.mets[0].p4.Pt()<0) return in; //FIXME Pt<80 if not for fullhad
+    if (temp.V.mets[0].p4.Pt()<0) return in; // Pt<80 for Znunu, currently using for fullhad without MET cut
     //    if (temp.H.p4.Pt()<150)return in;
     //    if (temp.H.firstJet().csv< 0.9) return in;
     //    if (temp.H.secondJet().csv<0.5) return in;

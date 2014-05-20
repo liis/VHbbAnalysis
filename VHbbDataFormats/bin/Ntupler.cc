@@ -2831,7 +2831,7 @@ double MyWeight = LumiWeights_.weight( Tnpv );
 
  if (doAllHad_  && Vtype != VHbbCandidate::Znn)
    continue;
- else if ( !doAllHad_ && Vtype == VHbbCandidate::Znn)
+ else if ( !doAllHad_ && !(Vtype == 0 || Vtype == 1 || Vtype == 2 || Vtype == 3))
    continue;
 
 
