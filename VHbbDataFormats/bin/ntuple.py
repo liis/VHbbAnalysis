@@ -7,8 +7,7 @@ process = cms.Process("FWLitePlots")
 #fileNames   = cms.vstring('file:2l2bMetEdmNtuples.root'),         ## mandatory
 process.fwliteInput = cms.PSet(
     fileNames   = cms.vstring(
-    "file:/hdfs/cms/store/user/joosep/TTH_HToBB_M-125_8TeV-pythia6/Mar19/87131f7abf095b2014f0aafe9c07da3d/output_10_1_VZa.root"
-#    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_SemiLeptMGDecays/PAT.edm_1_1_ABF.root"
+    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_SemiLeptMGDecays/PAT.edm_1_1_ABF.root"
 
 
 #"file:/gpfs/ddn/srm/cms/store/user/lpchbb/dlopes/WH125_Summer12_53X_V42b/dlopes/WH_WToLNu_HToBB_M-125_8TeV-powheg-herwigpp/HBB_EDMNtupleV42/9803889241b1fc304f795d3b3875632d//PAT.edm_10_1_lT1.root"

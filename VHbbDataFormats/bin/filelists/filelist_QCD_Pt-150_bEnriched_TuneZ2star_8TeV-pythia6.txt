@@ -5,8 +5,8 @@
 /hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_14_6_Asl.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_15_3_3DY.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_16_6_UGA.root
-/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_1_6_gQ8.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_17_2_TyV.root
+/hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_1_6_gQ8.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_2_6_DtA.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_3_6_cUh.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6/PAT.edm_4_6_U9x.root

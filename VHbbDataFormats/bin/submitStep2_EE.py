@@ -18,14 +18,16 @@ print "Import cfg file from ntuple.py"
 from ntuple  import process 
 
 debug    = False
-#outdir = './Ntuples_allHadTrig'
+doAllHad = False
 
+#outdir = './Ntuples_allHadTrig'
 outdir = './Ntuples_lep'
 print "Saving output to " + outdir
 
-def processAllBatch(jobName, isPisa, outName, split): #isPisa is a placeholder
+def processAllBatch(jobName, isPisa, outName, split, doAllHad=False): #isPisa is a placeholder
 
     process.fwliteInput.fileNames = ()
+    process.fwliteInput.doAllHad = cms.bool(doAllHad)
 
     if string.find( jobName, 'Run2012' )>0:
         process.Analyzer.isMC   = cms.bool(False)
@@ -128,7 +130,7 @@ for data_sample in data_samples:
     total = 0
     for k in range(nr_jobs):
         print "Processing job nr. ", k
-        total += processAllBatch(data_sample, 1, data_sample, [k*files_per_job+1,(k+1)*files_per_job])
+        total += processAllBatch(data_sample, 1, data_sample, [k*files_per_job+1,(k+1)*files_per_job], doAllHad=doAllHad)
     print '**************************************\nFraction of processed sample: %s\n**************************************\n' % total
 
 mc_samples = {
@@ -159,10 +161,14 @@ mc_samples = {
 #    "TTJets_FullLeptMGDecays_8TeV-madgraph": 782,
 #    "TTJets_HadronicMGDecays_8TeV-madgraph": 922,    
 
-    "QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6": 17,
-    "QCD_Pt-30To50_bEnriched_TuneZ2star_8TeV-pythia6": 173,
-    "QCD_Pt-50To150_bEnriched_TuneZ2star_8TeV-pythia6": 107,
+#    "QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6": 17,
+#    "QCD_Pt-30To50_bEnriched_TuneZ2star_8TeV-pythia6": 173,
+#    "QCD_Pt-50To150_bEnriched_TuneZ2star_8TeV-pythia6": 107,
 
+    "QCD_Pt_80_170_BCtoE_TuneZ2star_8TeV_pythia6": 66,
+#    "QCD_Pt_170_250_BCtoE_TuneZ2star_8TeV_pythia6", 68,
+#    "QCD_Pt_250_350_BCtoE_TuneZ2star_8TeV_pythia6", 54,
+#    "QCD_Pt_350_BCtoE_TuneZ2star_8TeV_pythia6", 62,
     }
 
 for mc_sample in mc_samples:
