@@ -166,9 +166,9 @@ mc_samples = {
 #    "QCD_Pt-50To150_bEnriched_TuneZ2star_8TeV-pythia6": 107,
 
     "QCD_Pt_80_170_BCtoE_TuneZ2star_8TeV_pythia6": 66,
-#    "QCD_Pt_170_250_BCtoE_TuneZ2star_8TeV_pythia6", 68,
-#    "QCD_Pt_250_350_BCtoE_TuneZ2star_8TeV_pythia6", 54,
-#    "QCD_Pt_350_BCtoE_TuneZ2star_8TeV_pythia6", 62,
+    "QCD_Pt_170_250_BCtoE_TuneZ2star_8TeV_pythia6": 68,
+    "QCD_Pt_250_350_BCtoE_TuneZ2star_8TeV_pythia6": 54,
+    "QCD_Pt_350_BCtoE_TuneZ2star_8TeV_pythia6": 62,
     }
 
 for mc_sample in mc_samples:
