@@ -21,7 +21,7 @@ debug    = False
 doAllHad = False
 
 #outdir = './Ntuples_allHadTrig'
-outdir = './Ntuples_lep'
+outdir = './Ntuples_all'
 print "Saving output to " + outdir
 
 def processAllBatch(jobName, isPisa, outName, split, doAllHad=False): #isPisa is a placeholder
@@ -138,7 +138,7 @@ mc_samples = {
 #    "TTH_HToBB_M-110_8TeV-pythia6": 35,
 #    "TTH_HToBB_M-115_8TeV-pythia6": 17,
 #    "TTH_HToBB_M-120_8TeV-pythia6": 25,
-#    "TTH_HToBB_M-125_8TeV-pythia6": 16,
+    "TTH_HToBB_M-125_8TeV-pythia6": 16,
 #    "TTH_HToBB_M-130_8TeV-pythia6": 22,
 #    "TTH_HToBB_M-135_8TeV-pythia6": 18,
 #    "TTWJets_8TeV-madgraph": 8,
@@ -165,10 +165,10 @@ mc_samples = {
 #    "QCD_Pt-30To50_bEnriched_TuneZ2star_8TeV-pythia6": 173,
 #    "QCD_Pt-50To150_bEnriched_TuneZ2star_8TeV-pythia6": 107,
 
-    "QCD_Pt_80_170_BCtoE_TuneZ2star_8TeV_pythia6": 66,
-    "QCD_Pt_170_250_BCtoE_TuneZ2star_8TeV_pythia6": 68,
-    "QCD_Pt_250_350_BCtoE_TuneZ2star_8TeV_pythia6": 54,
-    "QCD_Pt_350_BCtoE_TuneZ2star_8TeV_pythia6": 62,
+#    "QCD_Pt_80_170_BCtoE_TuneZ2star_8TeV_pythia6": 66,
+#    "QCD_Pt_170_250_BCtoE_TuneZ2star_8TeV_pythia6": 68,
+#    "QCD_Pt_250_350_BCtoE_TuneZ2star_8TeV_pythia6": 54,
+#    "QCD_Pt_350_BCtoE_TuneZ2star_8TeV_pythia6": 62,
     }
 
 for mc_sample in mc_samples:

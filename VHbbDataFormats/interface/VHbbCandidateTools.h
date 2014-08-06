@@ -95,7 +95,7 @@ class VHbbCandidateTools {
 
     //    CompareJetPtMuons ptComparator;
     //    std::sort(muons_.begin(), muons_.end(), ptComparator);
-    if (muons_[0].p4.Pt()<20 || muons_[1].p4.Pt()<20 ) return in;
+    if (muons_[0].p4.Pt()<20 || muons_[1].p4.Pt()<10 ) return in;
     
     //
     // now I need to ask also for the charge
@@ -119,7 +119,7 @@ class VHbbCandidateTools {
     temp.V.p4 = muons_[0].p4+muons_[selectMu2].p4;
     std::vector<VHbbEvent::MuonInfo> muons2_;
     for (std::vector<VHbbEvent::MuonInfo>::const_iterator it = muons_.begin(); it!= muons_.end(); ++it){
-      if (it->p4.Pt()>20) muons2_.push_back(*it);
+      if (it->p4.Pt()>10) muons2_.push_back(*it);
     }
     temp.V.muons = muons2_;
     
@@ -132,7 +132,7 @@ class VHbbCandidateTools {
     //    std::sort(electrons_.begin(), electrons_.end(), ptComparator2);
     std::vector<VHbbEvent::ElectronInfo> electrons2_;
     for (std::vector<VHbbEvent::ElectronInfo>::const_iterator it = electrons_.begin(); it!= electrons_.end(); ++it){
-      if (it->p4.Pt()>20) electrons2_.push_back(*it);
+      if (it->p4.Pt()>10) electrons2_.push_back(*it);
     }
     temp.V.electrons = electrons2_;
     
@@ -176,7 +176,7 @@ class VHbbCandidateTools {
 
     //    CompareJetPtElectrons ptComparator;
     //    std::sort(electrons_.begin(), electrons_.end(), ptComparator);
-    if (electrons_[0].p4.Pt()<20 || electrons_[1].p4.Pt()<20 ) return in;
+    if (electrons_[0].p4.Pt()<20 || electrons_[1].p4.Pt()<10 ) return in;
     //
     // now I need to ask also for the charge
     //
@@ -199,7 +199,7 @@ class VHbbCandidateTools {
    temp.V.p4 = electrons_[0].p4+electrons_[selectE2].p4;
     std::vector<VHbbEvent::ElectronInfo> electrons2_;
     for (std::vector<VHbbEvent::ElectronInfo>::const_iterator it = electrons_.begin(); it!= electrons_.end(); ++it){
-      if (it->p4.Pt()>20) electrons2_.push_back(*it);
+      if (it->p4.Pt()>10) electrons2_.push_back(*it);
     }
     temp.V.electrons = electrons2_;
   
@@ -212,7 +212,7 @@ class VHbbCandidateTools {
     //    std::sort(muons_.begin(), muons_.end(), ptComparator2);
     std::vector<VHbbEvent::MuonInfo> muons2_;
     for (std::vector<VHbbEvent::MuonInfo>::const_iterator it = muons_.begin(); it!= muons_.end(); ++it){
-      if (it->p4.Pt()>20) muons2_.push_back(*it);
+      if (it->p4.Pt()>10) muons2_.push_back(*it);
     }
     temp.V.muons = muons2_;
 

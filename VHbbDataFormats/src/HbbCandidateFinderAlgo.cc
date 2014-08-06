@@ -583,7 +583,7 @@ bool HbbCandidateFinderAlgo::findFatJet (const std::vector<VHbbEvent::HardJet>& 
         muons[it].ipDb<.2 &&
         (muons[it].pfChaIso+muons[it].pfPhoIso+muons[it].pfNeuIso)/muons[it].p4.Pt()<.15  &&
         fabs(muons[it].p4.Eta())<2.4 &&
-        muons[it].p4.Pt()>20 ) {
+        muons[it].p4.Pt()>10 ) {
      for(int j=0;j<2;j++){
     if(deltaR(muons[it].p4.Eta(),muons[it].p4.Phi(),filterjets[subJetIn[j]].p4.Eta(),filterjets[subJetIn[j]].p4.Phi())<0.3) muOverlap++;}
   }
@@ -597,7 +597,7 @@ bool HbbCandidateFinderAlgo::findFatJet (const std::vector<VHbbEvent::HardJet>& 
         fabs(electrons[it].p4.Eta()) < 2.5 &&
 //Remove this workaround as now we have the proper flags
 //      !( fabs(electrons[it].p4.Eta()) < 1.57 && fabs(electrons[it].p4.Eta()) > 1.44) &&
-        electrons[it].p4.Pt()>15 //  I use the minimum ok for both Z and W
+        electrons[it].p4.Pt()>10 //  I use the minimum ok for both Z and W
          && (electrons[it].pfChaIso+electrons[it].pfPhoIso+electrons[it].pfNeuIso)/electrons[it].p4.Pt()<.15
         ){
      for(int j=0;j<2;j++){
@@ -781,7 +781,7 @@ float pfCorrIso = (muons[it].pfChaIso+ std::max(muons[it].pfPhoIso+muons[it].pfN
 	//	(muons[it].hIso+muons[it].eIso+muons[it].tIso)/muons[it].p4.Pt()<.15 &&
         pfCorrIso < 0.12 &&
 	fabs(muons[it].p4.Eta())<2.4 &&
-	muons[it].p4.Pt()>20 ) {
+	muons[it].p4.Pt()>10 ) {
       out.push_back(muons[it]);
       positions.push_back(it);
   }
@@ -937,7 +937,7 @@ bool wpHWW=((fabs(eta) < 0.8 && id>0.94 && iso < 0.15) ||  (fabs(eta) >= 0.8 && 
 */
 //Remove this workaround as now we have the proper flags
 //	!( fabs(electrons[it].p4.Eta()) < 1.57 && fabs(electrons[it].p4.Eta()) > 1.44) &&
-	electrons[it].p4.Pt()>20 //  I use the minimum ok for both Z and W
+	electrons[it].p4.Pt()>10 //  I use the minimum ok for both Z and W
 	){
 /*      std::cout << "dxy .dz .isEE  .Deta  .Dphi  .sihih  .HoE  .fMVAVar_IoEmIoP  .isEB " <<std::endl;
       std::cout << fabs(electrons[it].dxy)  << " " <<  fabs(electrons[it].dz) << " " << electrons[it].isEE << " " << 

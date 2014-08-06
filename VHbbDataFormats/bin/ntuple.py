@@ -7,8 +7,8 @@ process = cms.Process("FWLitePlots")
 #fileNames   = cms.vstring('file:2l2bMetEdmNtuples.root'),         ## mandatory
 process.fwliteInput = cms.PSet(
     fileNames   = cms.vstring(
-    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_SemiLeptMGDecays/PAT.edm_1_1_ABF.root"
-
+#    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_SemiLeptMGDecays/PAT.edm_1_1_ABF.root"
+    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_FullLeptMGDecays/PAT.edm_118_0_8JD.root"
 
 #"file:/gpfs/ddn/srm/cms/store/user/lpchbb/dlopes/WH125_Summer12_53X_V42b/dlopes/WH_WToLNu_HToBB_M-125_8TeV-powheg-herwigpp/HBB_EDMNtupleV42/9803889241b1fc304f795d3b3875632d//PAT.edm_10_1_lT1.root"
 #"file:/gpfs/ddn/srm/cms/store/user/lpchbb/degrutto/TT_CT10_TuneZ2star_8TeV-powheg-tauolaSummer12_DR53X-PU_S10_START53_V7A-v2/degrutto/TT_CT10_TuneZ2star_8TeV-powheg-tauola/HBB_EDMNtupleV42/9803889241b1fc304f795d3b3875632d/PAT.edm_693_1_Sys.root"      
@@ -34,14 +34,15 @@ process.fwliteInput = cms.PSet(
     PUdatafileName = cms.string("data_PU_60bins_190456-208686_69.4mb.root"),
     badEventsFileName = cms.string("HCALLaser2012AllDatasets.txt"),
     Weight3DfileName = cms.string(""),
-    maxEvents   = cms.int32(-1),                             ## optional
+    maxEvents   = cms.int32(20000),                             ## optional
     runMin  = cms.int32(-1),
     runMax  = cms.int32(-1),
     skipEvents   = cms.int32(0),                             ## optional
     outputEvery = cms.uint32(0),                            ## optional
     lumisToProcess = CfgTypes.untracked(CfgTypes.VLuminosityBlockRange()),
 
-    doAllHad = cms.bool(True), #disable MET cut, veto events with leptons
+    doAll = cms.bool(True), #keep all events
+    doAllHad = cms.bool(False), #disable MET cut, veto events with leptons
     run_ttH_EE = cms.bool(False), #run on ttH ntuples of EE analysis
     )
 

@@ -291,7 +291,7 @@ float muon2012PfCorrIso(const VHbbEvent::MuonInfo & i, float rho) {
 bool muonId2012Tight(const VHbbEvent::MuonInfo & i, float rho, bool requireiso = true) {
   float pfCorrIso = muon2012PfCorrIso(i,rho);
   return (i.isPF && i. globChi2<10 && i.nPixelHits>= 1 && i.globNHits != 0 && i.nValidLayers > 5 &&         (i.cat & 0x1) && i.nMatches >=2 && i.ipDb<.2 
-	  && fabs(i.p4.Eta()) < 2.4 && i.p4.Pt() > 20. &&
+	  && fabs(i.p4.Eta()) < 2.4 && i.p4.Pt() > 10. &&
 	  i.zPVPt < 0.5 && (!requireiso || pfCorrIso < 0.12)); // Added by SCZ from selection
 }
 
@@ -1568,7 +1568,7 @@ int main(int argc, char* argv[])
 	std::vector<unsigned int> potentialMuRecoIsoTags;
 	
 	for(size_t m=0;m<iEvent->muInfo.size();m++) {
-	  if (muonId2012Tight(iEvent->muInfo[m],rhoN,false) && iEvent->muInfo[m].p4.Pt() > 20. && fabs(iEvent->muInfo[m].p4.Eta()) < 2.4) {
+	  if (muonId2012Tight(iEvent->muInfo[m],rhoN,false) && iEvent->muInfo[m].p4.Pt() > 10. && fabs(iEvent->muInfo[m].p4.Eta()) < 2.4) {
 	    if (verbose_) std::cout << "FOUND RecoIso tag Mu " << iEvent->muInfo[m].p4.Pt() << " " << iEvent->muInfo[m].p4.Eta() << " " << iEvent->muInfo[m].p4.Phi() << endl;
 	    potentialMuRecoIsoTags.push_back(m);
 	  }
@@ -1818,7 +1818,7 @@ int main(int argc, char* argv[])
         std::vector<unsigned int> potentialEleTags;
 
         for(size_t m=0;m<iEvent->eleInfo.size();m++) {
-          if (ElectronWP(iEvent->eleInfo[m],rhoForEleIso,80) && iEvent->eleInfo[m].p4.Pt() > 20.) {
+          if (ElectronWP(iEvent->eleInfo[m],rhoForEleIso,80) && iEvent->eleInfo[m].p4.Pt() > 10.) {
 	    if (verbose_) std::cout << "FOUND identified Ele " << iEvent->eleInfo[m].p4.Pt() << " " << iEvent->eleInfo[m].p4.Eta() << " " << iEvent->eleInfo[m].p4.Phi() << endl;
             potentialEleTags.push_back(m);
           }

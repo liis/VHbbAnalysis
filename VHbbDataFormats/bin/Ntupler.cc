@@ -1032,7 +1032,6 @@ int main(int argc, char* argv[])
 //   pdfNames.push_back("MSTW2008lo68cl.LHgrid"); // MSTW2008 (LO central)
 //   pdfNames.push_back("MSTW2008nnlo68cl.LHgrid"); // MSTW2008 (NNLO central)
 
-//  bool doAllHad_=true; //FIXME put to cfg file
   //initializing all the pdf sets
   nPdf=1; // one count the nominal PDF
   for (unsigned int setpdf=2; setpdf <= pdfNames.size()+1; setpdf++){
@@ -1109,6 +1108,7 @@ int main(int argc, char* argv[])
   std::string PUdatafileName2011B_ = in.getParameter<std::string> ("PUdatafileName2011B") ;
   std::string Weight3DfileName_ = in.getParameter<std::string> ("Weight3DfileName") ;
   
+  bool doAll_ = in.getParameter<bool>("doAll");
   bool doAllHad_ = in.getParameter<bool>("doAllHad"); 
   bool run_ttH_EE_ = in.getParameter<bool>("run_ttH_EE");
 
@@ -2671,6 +2671,7 @@ double MyWeight = LumiWeights_.weight( Tnpv );
 	if(Vtype == VHbbCandidate::Zmumu ){
 	  vLeptons.set(vhCand.V.muons[0],0,13,aux); 
 	  vLeptons.set(vhCand.V.muons[vhCand.V.secondLepton],1,13,aux);
+	  std::cout<<"2nd lepton pt = "<<vLeptons.pt[1] << std::endl;
 	  float cweightID = triggerWeight.scaleMuID(vLeptons.pt[0],vLeptons.eta[0]) * triggerWeight.scaleMuID(vLeptons.pt[1],vLeptons.eta[1]) ;
 	  float weightTrig1 = triggerWeight.scaleMuIsoHLT(vLeptons.pt[0],vLeptons.eta[0]);
 	  float weightTrig2 = triggerWeight.scaleMuIsoHLT(vLeptons.pt[1],vLeptons.eta[1]);
@@ -2700,8 +2701,10 @@ double MyWeight = LumiWeights_.weight( Tnpv );
 	}
 	if( Vtype == VHbbCandidate::Zee ){
 	  vLeptons.set(vhCand.V.electrons[0],0,11,aux);
+
 //	  std::cout << vhCand.V.secondLepton << std::endl;
 	  vLeptons.set(vhCand.V.electrons[vhCand.V.secondLepton],1,11,aux);
+	  std::cout<<"2nd electron pt = "<<vLeptons.pt[1] << std::endl;
 	  nvlep=2;
 	  firstAddEle=2;
 	  std::vector<float> pt,eta;
@@ -2831,7 +2834,7 @@ double MyWeight = LumiWeights_.weight( Tnpv );
 
  if (doAllHad_  && Vtype != VHbbCandidate::Znn)
    continue;
- else if ( !doAllHad_ && !(Vtype == 0 || Vtype == 1 || Vtype == 2 || Vtype == 3))
+ else if ( !doAllHad_ && !doAll_ && !(Vtype == 0 || Vtype == 1 || Vtype == 2 || Vtype == 3))
    continue;
 
 
