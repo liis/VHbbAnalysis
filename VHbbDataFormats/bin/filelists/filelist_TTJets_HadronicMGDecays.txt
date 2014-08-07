@@ -67,7 +67,6 @@
 /hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_117_0_qsj.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_118_0_zhi.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_119_0_2yj.root
-/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_1_1_tZc.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_120_0_UkQ.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_12_0_93N.root
 /hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_121_0_6ud.root

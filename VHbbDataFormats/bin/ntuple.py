@@ -7,8 +7,9 @@ process = cms.Process("FWLitePlots")
 #fileNames   = cms.vstring('file:2l2bMetEdmNtuples.root'),         ## mandatory
 process.fwliteInput = cms.PSet(
     fileNames   = cms.vstring(
-    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_SemiLeptMGDecays/PAT.edm_1_1_ABF.root"
-
+    #"file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_1_1_tZc.root"
+#    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_1_1_tZc.root" #fails, remove from list
+    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_1002_1_riL.root"
 
 #"file:/gpfs/ddn/srm/cms/store/user/lpchbb/dlopes/WH125_Summer12_53X_V42b/dlopes/WH_WToLNu_HToBB_M-125_8TeV-powheg-herwigpp/HBB_EDMNtupleV42/9803889241b1fc304f795d3b3875632d//PAT.edm_10_1_lT1.root"
 #"file:/gpfs/ddn/srm/cms/store/user/lpchbb/degrutto/TT_CT10_TuneZ2star_8TeV-powheg-tauolaSummer12_DR53X-PU_S10_START53_V7A-v2/degrutto/TT_CT10_TuneZ2star_8TeV-powheg-tauola/HBB_EDMNtupleV42/9803889241b1fc304f795d3b3875632d/PAT.edm_693_1_Sys.root"      
@@ -152,7 +153,17 @@ process.Analyzer = cms.PSet(
         "HLT_PFNoPUHT650_v.*", #59 #missing
         "HLT_EightJet30_eta3p0_v.*", #60
         "HLT_QuadPFJet82_65_48_35_BTagCSV_VBF_v.*", #61
-        "HLT_PFHT650_v.*", #62        
+        "HLT_PFHT650_v.*", #62
+        
+        "HLT_DiJet80Eta2p6_BTagIP3DFastPVLoose_v*", #63
+        "HLT_DiPFJet80_DiPFJet30_BTagCSVd07d05_v*", #64
+        "HLT_DiPFJet80_DiPFJet30_BTagCSVd07d05d03_v*", #65 
+        "HLT_DiPFJet80_DiPFJet30_BTagCSVd07d05d05_v*", #66
+        "HLT_Jet60Eta1p7_Jet53Eta1p7_DiBTagIP3DFastPV_v*", #67
+        "HLT_Jet80Eta1p7_Jet70Eta1p7_DiBTagIP3DFastPV_v*", #68
+        "HLT_QuadJet75_55_38_20_BTagIP_VBF_v*", #69
+        "HLT_QuadPFJet78_61_44_31_BTagCSV_VBF_v*", #70
+        "HLT_QuadPFJet82_65_48_35_BTagCSV_VBF_v*", #71
  
         ),
     
