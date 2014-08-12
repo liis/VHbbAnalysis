@@ -18,17 +18,19 @@ print "Import cfg file from ntuple.py"
 from ntuple  import process 
 
 debug    = False
-doAllHad = False
+doAllHad = True
 
 outdir = './Ntuples_allHadTrig'
 #outdir = './Ntuples_lep'
 print "Saving output to " + outdir
 
-def processAllBatch(jobName, isPisa, outName, split, doAllHad=False): #isPisa is a placeholder
+def processAllBatch(jobName, isPisa, outName, split, doAllHad): #isPisa is a placeholder
 
     process.fwliteInput.fileNames = ()
+    print "doAllHad = " + str(doAllHad)
     process.fwliteInput.doAllHad = cms.bool(doAllHad)
 
+    
     if string.find( jobName, 'Run2012' )>0:
         process.Analyzer.isMC   = cms.bool(False)
     
@@ -134,16 +136,18 @@ for data_sample in data_samples:
     print '**************************************\nFraction of processed sample: %s\n**************************************\n' % total
 
 mc_samples = {
-    "DYJetsToLL_M-10To50_TuneZ2Star_8TeV-madgraph": 1663,
+
 #    "TTH_HToBB_M-110_8TeV-pythia6": 35,
 #    "TTH_HToBB_M-115_8TeV-pythia6": 17,
 #    "TTH_HToBB_M-120_8TeV-pythia6": 25,
     "TTH_HToBB_M-125_8TeV-pythia6": 16,
 #    "TTH_HToBB_M-130_8TeV-pythia6": 22,
 #    "TTH_HToBB_M-135_8TeV-pythia6": 18,
+
     "TTWJets_8TeV-madgraph": 8,
     "TTZJets_8TeV-madgraph": 14,
     "DYJetsToLL_M-50_TuneZ2Star_8TeV-madgraph": 297,
+    "DYJetsToLL_M-10To50_TuneZ2Star_8TeV-madgraph": 1663,
 
     "WW_TuneZ2star_8TeV_pythia6_tauola": 668,
     "WZ_TuneZ2star_8TeV_pythia6_tauola": 670,
@@ -180,6 +184,5 @@ for mc_sample in mc_samples:
     total = 0
     for k in range(nr_jobs):
         print "Processing....", k
-        total += processAllBatch(mc_sample, 1, mc_sample, [k*files_per_job  +1,(k+1)*files_per_job ])
+        total += processAllBatch(mc_sample, 1, mc_sample, [k*files_per_job  +1,(k+1)*files_per_job ], doAllHad=doAllHad)
         print '\n**************************************\nFraction of processed sample: %s\n**************************************' % total
-

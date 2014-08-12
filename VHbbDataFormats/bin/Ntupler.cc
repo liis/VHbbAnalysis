@@ -2829,11 +2829,12 @@ double MyWeight = LumiWeights_.weight( Tnpv );
    //          weightTrig2012A = 
  }
 
+ // std::cout<<"DoAllHad = "<<doAllHad_<<std::endl;
  if (doAllHad_  && Vtype != VHbbCandidate::Znn)
    continue;
  else if ( !doAllHad_ && !(Vtype == 0 || Vtype == 1 || Vtype == 2 || Vtype == 3))
    continue;
-
+ // std::cout<<"Vtype = "<<Vtype<<std::endl;
 
  if(weightTrigMay < 0) weightTrigMay=weightTrig;
  if(weightTrigV4 < 0) weightTrigV4=weightTrig;
