@@ -20,8 +20,8 @@ from ntuple  import process
 debug    = False
 doAllHad = True
 
-outdir = './Ntuples_allHadTrig'
-#outdir = './Ntuples_lep'
+#outdir = './Ntuples_allHadTrig'
+outdir = './Ntuples_lep'
 print "Saving output to " + outdir
 
 def processAllBatch(jobName, isPisa, outName, split, doAllHad): #isPisa is a placeholder
@@ -144,35 +144,35 @@ mc_samples = {
 #    "TTH_HToBB_M-130_8TeV-pythia6": 22,
 #    "TTH_HToBB_M-135_8TeV-pythia6": 18,
 
-    "TTWJets_8TeV-madgraph": 8,
-    "TTZJets_8TeV-madgraph": 14,
-    "DYJetsToLL_M-50_TuneZ2Star_8TeV-madgraph": 297,
-    "DYJetsToLL_M-10To50_TuneZ2Star_8TeV-madgraph": 1663,
+#    "TTWJets_8TeV-madgraph": 8,
+#    "TTZJets_8TeV-madgraph": 14,
+#    "DYJetsToLL_M-50_TuneZ2Star_8TeV-madgraph": 297,
+#    "DYJetsToLL_M-10To50_TuneZ2Star_8TeV-madgraph": 1663,
 
-    "WW_TuneZ2star_8TeV_pythia6_tauola": 668,
-    "WZ_TuneZ2star_8TeV_pythia6_tauola": 670,
-    "ZZ_TuneZ2star_8TeV_pythia6_tauola": 659,
-    "WJetsToLNu_TuneZ2Star_8TeV-madgraph-tarball": 133,
+#    "WW_TuneZ2star_8TeV_pythia6_tauola": 668,
+#    "WZ_TuneZ2star_8TeV_pythia6_tauola": 670,
+#    "ZZ_TuneZ2star_8TeV_pythia6_tauola": 659,
+#    "WJetsToLNu_TuneZ2Star_8TeV-madgraph-tarball": 133,
 
-    "T_s-channel_TuneZ2star_8TeV-powheg-tauola": 13,
-    "T_t-channel_TuneZ2star_8TeV-powheg-tauola": 34,
-    "T_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola": 25,
-    "Tbar_s-channel_TuneZ2star_8TeV-powheg-tauola": 7,
-    "Tbar_t-channel_TuneZ2star_8TeV-powheg-tauola": 20,
-    "Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola": 27,
+#    "T_s-channel_TuneZ2star_8TeV-powheg-tauola": 13,
+#    "T_t-channel_TuneZ2star_8TeV-powheg-tauola": 34,
+#    "T_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola": 25,
+#    "Tbar_s-channel_TuneZ2star_8TeV-powheg-tauola": 7,
+#    "Tbar_t-channel_TuneZ2star_8TeV-powheg-tauola": 20,
+#    "Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola": 27,
 
-    "TTJets_SemiLeptMGDecays_8TeV-madgraph": 1697,
-    "TTJets_FullLeptMGDecays_8TeV-madgraph": 782,
-    "TTJets_HadronicMGDecays_8TeV-madgraph": 922,    
+#    "TTJets_SemiLeptMGDecays_8TeV-madgraph": 1697,
+#    "TTJets_FullLeptMGDecays_8TeV-madgraph": 782,
+#    "TTJets_HadronicMGDecays_8TeV-madgraph": 922,    
 
-    "QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6": 17,
-    "QCD_Pt-30To50_bEnriched_TuneZ2star_8TeV-pythia6": 173,
-    "QCD_Pt-50To150_bEnriched_TuneZ2star_8TeV-pythia6": 107,
+#    "QCD_Pt-150_bEnriched_TuneZ2star_8TeV-pythia6": 17,
+#    "QCD_Pt-30To50_bEnriched_TuneZ2star_8TeV-pythia6": 173,
+#    "QCD_Pt-50To150_bEnriched_TuneZ2star_8TeV-pythia6": 107,
 
-    "QCD_Pt_80_170_BCtoE_TuneZ2star_8TeV_pythia6": 66,
-    "QCD_Pt_170_250_BCtoE_TuneZ2star_8TeV_pythia6": 68,
-    "QCD_Pt_250_350_BCtoE_TuneZ2star_8TeV_pythia6": 54,
-    "QCD_Pt_350_BCtoE_TuneZ2star_8TeV_pythia6": 62,
+#    "QCD_Pt_80_170_BCtoE_TuneZ2star_8TeV_pythia6": 66,
+#    "QCD_Pt_170_250_BCtoE_TuneZ2star_8TeV_pythia6": 68,
+#    "QCD_Pt_250_350_BCtoE_TuneZ2star_8TeV_pythia6": 54,
+#    "QCD_Pt_350_BCtoE_TuneZ2star_8TeV_pythia6": 62,
     }
 
 for mc_sample in mc_samples:

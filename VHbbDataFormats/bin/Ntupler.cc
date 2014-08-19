@@ -3030,11 +3030,12 @@ if(genW.pt>0)
 
 	// b coming from Higgs
 	for (unsigned int i=0; i<aux.mcB.size(); i++){
-	  if (abs(aux.mcB[i].momid)!=5) {
+	  //	  if (abs(aux.mcB[i].momid)!=5) { //BUGFIX?
+	  if  ( abs(aux.mcB[i].momid) == 25 ){
 	    genB.mass = aux.mcB[i].p4.M();
 	    genB.pt = aux.mcB[i].p4.Pt();
-if(genB.pt>0)
-	    genB.eta = aux.mcB[i].p4.Eta();
+	    if(genB.pt>0)
+	      genB.eta = aux.mcB[i].p4.Eta();
 	    genB.phi = aux.mcB[i].p4.Phi();
 	    genB.status = aux.mcB[i].status;
 	    genB.charge = aux.mcB[i].charge;
@@ -3053,11 +3054,12 @@ if(  genTop.bpt >0)
 	}
 	
 	for (unsigned int i=0; i<aux.mcBbar.size(); i++){
-	  if (abs(aux.mcBbar[i].momid)!=5 ) {
+	  //	  if (abs(aux.mcBbar[i].momid)!=5 ) {
+	  if( abs(aux.mcBbar[i].momid) == 25 ){
 	    genBbar.mass = aux.mcBbar[i].p4.M();
 	    genBbar.pt = aux.mcBbar[i].p4.Pt();
-if(genBbar.pt >0)
-	    genBbar.eta = aux.mcBbar[i].p4.Eta();
+	    if(genBbar.pt >0)
+	      genBbar.eta = aux.mcBbar[i].p4.Eta();
 	    genBbar.phi = aux.mcBbar[i].p4.Phi();
 	    genBbar.status = aux.mcBbar[i].status;
 	    if (aux.mcBbar[i].momid!=-99) genBbar.momid =  aux.mcBbar[i].momid;

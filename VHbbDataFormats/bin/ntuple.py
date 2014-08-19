@@ -9,7 +9,8 @@ process.fwliteInput = cms.PSet(
     fileNames   = cms.vstring(
     #"file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_1_1_tZc.root"
 #    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_1_1_tZc.root" #fails, remove from list
-    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_1002_1_riL.root"
+#    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTJets_HadronicMGDecays/PAT.edm_1002_1_riL.root"
+    "file:/hdfs/cms/store/user/liis/VHbb_patTuples/TTH125/PAT.edm_19_1_9LL.root"
 
 #"file:/gpfs/ddn/srm/cms/store/user/lpchbb/dlopes/WH125_Summer12_53X_V42b/dlopes/WH_WToLNu_HToBB_M-125_8TeV-powheg-herwigpp/HBB_EDMNtupleV42/9803889241b1fc304f795d3b3875632d//PAT.edm_10_1_lT1.root"
 #"file:/gpfs/ddn/srm/cms/store/user/lpchbb/degrutto/TT_CT10_TuneZ2star_8TeV-powheg-tauolaSummer12_DR53X-PU_S10_START53_V7A-v2/degrutto/TT_CT10_TuneZ2star_8TeV-powheg-tauola/HBB_EDMNtupleV42/9803889241b1fc304f795d3b3875632d/PAT.edm_693_1_Sys.root"      
@@ -35,7 +36,7 @@ process.fwliteInput = cms.PSet(
     PUdatafileName = cms.string("data_PU_60bins_190456-208686_69.4mb.root"),
     badEventsFileName = cms.string("HCALLaser2012AllDatasets.txt"),
     Weight3DfileName = cms.string(""),
-    maxEvents   = cms.int32(-1),                             ## optional
+    maxEvents   = cms.int32(10000),                             ## optional
     runMin  = cms.int32(-1),
     runMax  = cms.int32(-1),
     skipEvents   = cms.int32(0),                             ## optional
